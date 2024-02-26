@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             // Agregar aquí el código para el cierre de sesión
             Toast.makeText(this, "Logout clicked", Toast.LENGTH_SHORT).show();
         }
+        // Cerrar el drawer después de navegar a la nueva pestaña
+        DrawerLayout drawerLayout = findViewById(R.id.drawerLayout);
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }
