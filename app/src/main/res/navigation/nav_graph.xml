@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pantallaprincipalFragment">
+
+    <fragment
+        android:id="@+id/pantallaprincipalFragment"
+        android:name="com.example.practicafigma.PantallaprincipalFragment"
+        android:label="fragment_pantallaprincipal"
+        tools:layout="@layout/fragment_pantallaprincipal" >
+        <action
+            android:id="@+id/action_pantallaprincipalFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_pantallaprincipalFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.practicafigma.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_pantallaprincipalFragment"
+            app:destination="@id/pantallaprincipalFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotpasswordFragment"
+            app:destination="@id/forgotpasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginEntrepreneurFragment"
+            app:destination="@id/loginEntrepreneurFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.practicafigma.registerFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.practicafigma.menuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_FavouriteFragment"
+            app:destination="@id/FavouriteFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_HistoryFragment"
+            app:destination="@id/HistoryFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_tabFragment1"
+            app:destination="@id/tabFragment1" />
+        <action
+            android:id="@+id/action_menuFragment_to_tabFragment2"
+            app:destination="@id/tabFragment2" />
+        <action
+            android:id="@+id/action_menuFragment_to_tabFragment3"
+            app:destination="@id/tabFragment3" />
+        <action
+            android:id="@+id/action_menuFragment_to_tabFragment4"
+            app:destination="@id/tabFragment4" />
+        <action
+            android:id="@+id/action_menuFragment_to_shoppingCartFragment"
+            app:destination="@id/shoppingCartFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotpasswordFragment"
+        android:name="com.example.practicafigma.forgotpasswordFragment"
+        android:label="fragment_forgotpassword"
+        tools:layout="@layout/fragment_forgotpassword" >
+        <action
+            android:id="@+id/action_forgotpasswordFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.example.practicafigma.newPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" >
+        <action
+            android:id="@+id/action_newPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginEntrepreneurFragment"
+        android:name="com.example.practicafigma.LoginEntrepreneurFragment"
+        android:label="fragment_login_entrepreneur"
+        tools:layout="@layout/fragment_login_entrepreneur" >
+        <action
+            android:id="@+id/action_loginEntrepreneurFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_loginEntrepreneurFragment_to_registerEntrepreneurFragment"
+            app:destination="@id/registerEntrepreneurFragment" />
+        <action
+            android:id="@+id/action_loginEntrepreneurFragment_to_forgotpasswordFragment"
+            app:destination="@id/forgotpasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerEntrepreneurFragment"
+        android:name="com.example.practicafigma.registerEntrepreneurFragment"
+        android:label="fragment_register_entrepreneur"
+        tools:layout="@layout/fragment_register_entrepreneur" >
+        <action
+            android:id="@+id/action_registerEntrepreneurFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_registerEntrepreneurFragment_to_loginEntrepreneurFragment"
+            app:destination="@id/loginEntrepreneurFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.practicafigma.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_favouriteFragment"
+            app:destination="@id/FavouriteFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_historyFragment"
+            app:destination="@id/HistoryFragment" />
+        <action
+            android:id="@+id/action_ProfileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_ProfileFragment_to_choseAavatarFragment"
+            app:destination="@id/choseAavatarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HistoryFragment"
+        android:name="com.example.practicafigma.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_favouriteFragment"
+            app:destination="@id/FavouriteFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_profileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FavouriteFragment"
+        android:name="com.example.practicafigma.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_favouriteFragment_to_historyFragment"
+            app:destination="@id/HistoryFragment" />
+        <action
+            android:id="@+id/action_favouriteFragment_to_profileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_FavouriteFragment_to_shoppingCartFragment"
+            app:destination="@id/shoppingCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabFragment1"
+        android:name="com.example.practicafigma.TabFragment1"
+        android:label="fragment_tab1"
+        tools:layout="@layout/fragment_tab1" >
+        <action
+            android:id="@+id/action_tabFragment1_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_tabFragment1_to_tabFragment2"
+            app:destination="@id/tabFragment2" />
+        <action
+            android:id="@+id/action_tabFragment1_to_tabFragment3"
+            app:destination="@id/tabFragment3" />
+        <action
+            android:id="@+id/action_tabFragment1_to_tabFragment4"
+            app:destination="@id/tabFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabFragment2"
+        android:name="com.example.practicafigma.TabFragment2"
+        android:label="fragment_tab2"
+        tools:layout="@layout/fragment_tab2" >
+        <action
+            android:id="@+id/action_tabFragment2_to_tabFragment1"
+            app:destination="@id/tabFragment1" />
+        <action
+            android:id="@+id/action_tabFragment2_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_tabFragment2_to_tabFragment3"
+            app:destination="@id/tabFragment3" />
+        <action
+            android:id="@+id/action_tabFragment2_to_tabFragment4"
+            app:destination="@id/tabFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabFragment3"
+        android:name="com.example.practicafigma.TabFragment3"
+        android:label="fragment_tab3"
+        tools:layout="@layout/fragment_tab3" >
+        <action
+            android:id="@+id/action_tabFragment3_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_tabFragment3_to_tabFragment1"
+            app:destination="@id/tabFragment1" />
+        <action
+            android:id="@+id/action_tabFragment3_to_tabFragment2"
+            app:destination="@id/tabFragment2" />
+        <action
+            android:id="@+id/action_tabFragment3_to_tabFragment4"
+            app:destination="@id/tabFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabFragment4"
+        android:name="com.example.practicafigma.TabFragment4"
+        android:label="fragment_tab4"
+        tools:layout="@layout/fragment_tab4" >
+        <action
+            android:id="@+id/action_tabFragment4_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_tabFragment4_to_tabFragment1"
+            app:destination="@id/tabFragment1" />
+        <action
+            android:id="@+id/action_tabFragment4_to_tabFragment2"
+            app:destination="@id/tabFragment2" />
+        <action
+            android:id="@+id/action_tabFragment4_to_tabFragment3"
+            app:destination="@id/tabFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingCartFragment"
+        android:name="com.example.practicafigma.ShoppingCartFragment"
+        android:label="fragment_shopping_cart"
+        tools:layout="@layout/fragment_shopping_cart" >
+        <action
+            android:id="@+id/action_shoppingCartFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment" />
+        <action
+            android:id="@+id/action_shoppingCartFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.example.practicafigma.PaymentMethodFragment"
+        android:label="fragment_payment_method"
+        tools:layout="@layout/fragment_payment_method" >
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_shopReturnMainMenuFragment"
+            app:destination="@id/shopReturnMainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopReturnMainMenuFragment"
+        android:name="com.example.practicafigma.ShopReturnMainMenuFragment"
+        android:label="fragment_shop_return_main_menu"
+        tools:layout="@layout/fragment_shop_return_main_menu" >
+        <action
+            android:id="@+id/action_shopReturnMainMenuFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawer_menu"
+        android:name="com.example.practicafigma.drawer_menu"
+        android:label="fragment_drawer_menu"
+        tools:layout="@layout/fragment_drawer_menu" >
+        <action
+            android:id="@+id/action_drawer_menu_to_tabFragment1"
+            app:destination="@id/tabFragment1" />
+        <action
+            android:id="@+id/action_drawer_menu_to_tabFragment2"
+            app:destination="@id/tabFragment2" />
+        <action
+            android:id="@+id/action_drawer_menu_to_tabFragment3"
+            app:destination="@id/tabFragment3" />
+        <action
+            android:id="@+id/action_drawer_menu_to_tabFragment4"
+            app:destination="@id/tabFragment4" />
+        <action
+            android:id="@+id/action_drawer_menu_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_drawer_menu_to_shoppingCartFragment"
+            app:destination="@id/shoppingCartFragment" />
+        <action
+            android:id="@+id/action_drawer_menu_to_customerSuportFragment"
+            app:destination="@id/customerSuportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerSuportFragment"
+        android:name="com.example.practicafigma.CustomerSuportFragment"
+        android:label="fragment_customer_suport"
+        tools:layout="@layout/fragment_customer_suport" >
+        <action
+            android:id="@+id/action_customerSuportFragment_to_submitCustomerFragment"
+            app:destination="@id/submitCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitCustomerFragment"
+        android:name="com.example.practicafigma.SubmitCustomerFragment"
+        android:label="fragment_submit_customer"
+        tools:layout="@layout/fragment_submit_customer" >
+        <action
+            android:id="@+id/action_submitCustomerFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choseAavatarFragment"
+        android:name="com.example.practicafigma.ChoseAavatarFragment"
+        android:label="fragment_chose_aavatar"
+        tools:layout="@layout/fragment_chose_aavatar" >
+        <action
+            android:id="@+id/action_choseAavatarFragment_to_confirmAvatarFragment"
+            app:destination="@id/confirmAvatarFragment" />
+        <action
+            android:id="@+id/action_choseAavatarFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmAvatarFragment"
+        android:name="com.example.practicafigma.ConfirmAvatarFragment"
+        android:label="fragment_confirm_avatar"
+        tools:layout="@layout/fragment_confirm_avatar" >
+        <action
+            android:id="@+id/action_confirmAvatarFragment_to_choseAavatarFragment"
+            app:destination="@id/choseAavatarFragment" />
+        <action
+            android:id="@+id/action_confirmAvatarFragment_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_header"
+        android:name="com.example.practicafigma.nav_header"
+        android:label="fragment_nav_header"
+        tools:layout="@layout/fragment_nav_header" >
+        <action
+            android:id="@+id/action_nav_header_to_choseAavatarFragment"
+            app:destination="@id/choseAavatarFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="731dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HistoryFragment">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="My History"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="69dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="-47dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="641dp"
+        android:gravity="center"
+        android:text="__________________"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</RelativeLayout>

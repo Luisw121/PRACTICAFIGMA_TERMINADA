@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PRACTICAFIGMA" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <!-- Otros atributos de color -->
+    </style>
+
+    <style name="Theme.PRACTICAFIGMA" parent="Base.Theme.PRACTICAFIGMA" />
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!-- Overlay de tema para el NavigationView -->
+        <!-- Puedes personalizar aquí si es necesario -->
+    </style>
+    <!-- Estilo para botones -->
+    <style name="Widget.Button.Black" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/black</item>
+        <!-- Otros atributos de estilo de botón si es necesario -->
+    </style>
+
+</resources>

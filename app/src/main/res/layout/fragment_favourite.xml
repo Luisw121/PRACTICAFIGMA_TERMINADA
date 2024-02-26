@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="731dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FavouriteFragment">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="78dp"
+        android:layout_height="69dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/carritocompra"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="266dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toEndOf="@+id/imageView7"
+        android:background="@drawable/carrito" />
+
+    <TextView
+        android:id="@+id/TitleFavourtie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="My favorite foods"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFavourites"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:layout_below="@+id/TitleFavourtie"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="6dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_favourite" />
+
+</RelativeLayout>

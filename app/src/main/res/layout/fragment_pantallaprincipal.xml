@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chefcorta"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PantallaprincipalFragment">
+
+    <Button
+        android:id="@+id/primerboton"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondo"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <TextView
+        android:id="@+id/signInTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textStyle="bold"
+        android:text="Sign In"
+        android:textColor="@color/rojo"
+        app:layout_constraintStart_toEndOf="@+id/ask"
+        app:layout_constraintTop_toBottomOf="@+id/primerboton" />
+
+    <TextView
+        android:id="@+id/ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="14dp"
+        android:gravity="center"
+        android:text="Don't have a account?"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/primerboton"
+        app:layout_constraintTop_toBottomOf="@+id/primerboton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
